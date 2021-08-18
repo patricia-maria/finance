@@ -27,7 +27,7 @@
                     <span>Entradas</span>
                     <img src="./img/income.svg" alt="Imagem de entradas">
                 </h3>
-                <p id="incomeDisplay">R$ 5.000,00 </p>
+                <p id="incomeDisplay">R$ 0,00 </p>
             </div>
 
             <div class="card">
@@ -35,7 +35,7 @@
                     <span>Saídas</span>
                     <img src="./img/expense.svg" alt="Imagem de saídas">
                 </h3>
-                <p id="expenseDisplay">R$ 2.000,00 </p>
+                <p id="expenseDisplay">R$ 0,00 </p>
             </div>
 
             <div class="card total">
@@ -43,7 +43,7 @@
                     <span>Total</span>
                     <img src="./img/total.svg" alt="Imagem de total">
                 </h3>
-                <p id="totalDisplay">R$ 3.000,00 </p>
+                <p id="totalDisplay">R$ 0,00 </p>
             </div>
         </section>
 
@@ -63,30 +63,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="description">Luz</td>
-                        <td class="expense">- R$ 500,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td>
-                            <img src="./img/minus.svg" alt="Remover transação">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Criação website</td>
-                        <td class="income">R$ 5.000,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td>
-                            <img src="./img/minus.svg" alt="Remover transação">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Internet</td>
-                        <td class="expense">- R$ 200,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td>
-                            <img src="./img/minus.svg" alt="Remover transação">
-                        </td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </section>
@@ -107,28 +84,25 @@
                         <label class="sr-only" for="amount">valor</label>
 
                         <input type="number" step="0.01" id="amount" name="amount" placeholder="0.00" />
-                        <small>Use o sinal - (negativo) para despesas e , (vírgula) para casas
+                        <small class="help">Use o sinal - (negativo) para despesas e , (vírgula) para casas
                             decimais</small>
                     </div>
                     <div class="input-group">
                         <label 
-                        class="sr-only" 
-                        for="date">Data
-                    </label>
+                            class="sr-only" for="date">Data
+                        </label>
 
                         <input 
-                        type="date" 
-                        id="date" 
-                        name="date" 
-                        placeholder="date" 
+                            type="date" id="date" name="date"  
                         />
                     </div>
 
                     <div class="input-group actions">
                         <a 
-                        onclick="Modal.close()"
-                        href="#" 
-                        class="button cancel">Cancelar</a>
+                            onclick="Modal.close()"
+                            href="#" 
+                            class="button cancel">Cancelar
+                        </a>
                         <button>Salvar</button>
                     </div>
 
